@@ -34,9 +34,10 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${montserrat.variable} ${playfair.variable} ${cormorant.variable} font-sans bg-cream-50 text-stone-800`}
+        suppressHydrationWarning
       >
         <Header />
         {children}

@@ -20,8 +20,29 @@ const nextConfig = {
     ignoreBuildErrors: true,
   },
   images: {
-    unoptimized: true,
+    unoptimized: false,
   },
+  // Add long-term cache headers for static images and Next.js static assets
+  headers: async () => [
+    {
+      source: '/images/:all*',
+      headers: [
+        {
+          key: 'Cache-Control',
+          value: 'public, max-age=31536000, immutable',
+        },
+      ],
+    },
+    {
+      source: '/_next/static/:all*',
+      headers: [
+        {
+          key: 'Cache-Control',
+          value: 'public, max-age=31536000, immutable',
+        },
+      ],
+    },
+  ],
   experimental: {
     webpackBuildWorker: true,
     parallelServerBuildTraces: true,

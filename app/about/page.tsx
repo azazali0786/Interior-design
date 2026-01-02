@@ -8,7 +8,7 @@ export default function About() {
       {/* Hero Section */}
       <section className="relative h-[50vh] md:h-[60vh] w-full mb-16">
         <Image
-          src="/images/about-ban.jpg?height=1080&width=1920&text=About"
+          src="/images/about-ban.jpg"
           alt="About Rajesh Interior"
           fill
           className="object-cover"
@@ -26,9 +26,9 @@ export default function About() {
       {/* Our Story Section */}
       <section className="px-4 md:px-8 max-w-7xl mx-auto mb-24">
         <div className="flex flex-col md:flex-row gap-16 items-center">
-          <div className="md:w-1/2 h-[500px] md:h-[600px] relative overflow-hidden order-1 md:order-none">
+          <div className="md:w-1/2 h-[500px] md:h-[600px] relative overflow-hidden order-1 md:order-none w-full">
             <Image
-              src="/images/about1.jpg?height=1200&width=800&text=Rajesh"
+              src="/images/about1.jpg"
               alt="Rajesh - Interior Designer"
               fill
               className="object-cover"
@@ -51,7 +51,7 @@ export default function About() {
             </p>
             <div className="flex items-center">
               <Image
-                src="/images/rajesh.png?height=100&width=300&text=Signature"
+                src="/images/rajesh.png"
                 alt="Rajesh's Signature"
                 width={150}
                 height={50}
@@ -129,35 +129,35 @@ export default function About() {
                 title: "Consultation & Discovery",
                 description:
                   "We begin by understanding your needs, preferences, and vision for the space. This initial consultation helps us establish project goals and parameters.",
-                image: "/images/pro1.jpg?height=600&width=800&text=Consultation",
+                image: "/images/pro1.jpg",
               },
               {
                 number: "02",
                 title: "Concept Development",
                 description:
                   "Based on our discovery, we create preliminary design concepts that align with your vision, including space planning, color schemes, and material selections.",
-                image: "/images/about2.jpg?height=600&width=800&text=Concept",
+                image: "/images/about2.jpg",
               },
               {
                 number: "03",
                 title: "Design Refinement",
                 description:
                   "We refine the chosen concept, developing detailed plans, elevations, and 3D visualizations to help you better understand the proposed design.",
-                image: "/images/about3.jpg?height=600&width=800&text=Refinement",
+                image: "/images/about3.jpg",
               },
               {
                 number: "04",
                 title: "Implementation",
                 description:
                   "Once the design is approved, we coordinate with contractors and vendors to bring the vision to life, overseeing every aspect of the implementation process.",
-                image: "/images/about4.jpg?height=600&width=800&text=Implementation",
+                image: "/images/about4.jpg",
               },
               {
                 number: "05",
                 title: "Final Reveal",
                 description:
                   "We complete the project with styling and finishing touches, ensuring every detail is perfect before the final reveal of your transformed space.",
-                image: "/images/about5.jpg?height=600&width=800&text=Reveal",
+                image: "/images/about5.jpg",
               },
             ].map((step, index) => (
               <div key={index} className="flex flex-col md:flex-row gap-12 items-center">
@@ -171,18 +171,15 @@ export default function About() {
                   <p className="text-lg text-charcoal-900/70 ml-20 font-montserrat">{step.description}</p>
                 </div>
                 <div
-                  className={`md:w-1/2 h-[300px] md:h-[400px] relative overflow-hidden ${index % 2 === 1 ? "md:order-1" : ""}`}
+                  className={`md:w-1/2 h-[300px] md:h-[400px] relative overflow-hidden w-full ${index % 2 === 1 ? "md:order-1" : ""}`}
                 >
-                  <Image src={step.image || "/placeholder.svg"} alt={step.title} fill className="object-cover" />
+                  <Image src={step.image} alt={step.title} fill className="object-cover" />
                 </div>
               </div>
             ))}
           </div>
         </div>
       </section>
-
-      {/* Team Section */}
-      
 
       {/* CTA Section */}
       <section className="px-4 md:px-8 py-24">

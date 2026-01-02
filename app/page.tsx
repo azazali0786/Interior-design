@@ -3,6 +3,8 @@ import Link from "next/link"
 import { ArrowRight } from "lucide-react"
 import { testimonials,projects } from "@/lib/data"
 import Services from "@/components/services"
+import BeforeAfterSlider from "@/components/ui/BeforeAfterSlider"
+
 
 export default function Home() {
 
@@ -11,7 +13,7 @@ export default function Home() {
       {/* Hero Section - Full Screen */}
       <section className="relative h-screen  w-full flex items-center justify-center">
         <Image
-          src="/images/banner.jpg?height=1080&width=1920"
+          src="/images/banner.jpg"
           alt="Interior Design Showcase"
           fill
           className="object-cover"
@@ -33,9 +35,6 @@ export default function Home() {
             Explore Our Work <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
-
-        {/* Scroll indicator */}
-       
       </section>
 
       {/* Introduction Section */}
@@ -62,12 +61,12 @@ export default function Home() {
                 Learn more about us <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
-            <div className="md:w-1/2 h-[500px] relative rounded-none overflow-hidden">
-              <Image
-                src="/images/banner3.jpg"
-                alt="Interior Design Concept"
-                fill
-                className="object-cover"
+            <div className="md:w-1/2 w-full">
+              <BeforeAfterSlider
+                beforeImage="/images/banner.jpg"
+                afterImage="/images/banner3.jpg"
+                beforeLabel="Before"
+                afterLabel="After"
               />
             </div>
           </div>
@@ -75,8 +74,8 @@ export default function Home() {
       </section>
 
       {/* Services Section with Overlapping Images */}
-      
       <Services />
+
       {/* Featured Projects - Horizontal Scroll on Mobile */}
       <section className="py-20 px-4 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
@@ -110,32 +109,31 @@ export default function Home() {
           </div>
 
           {/* Mobile Horizontal Scroll */}
-         <div className="md:hidden overflow-x-auto pb-8 -mx-4 px-4">
-  <div className="flex space-x-4" style={{ minWidth: "max-content" }}>
-    {Object.entries(projects).map(([key, project]) => (
-      <Link
-        key={key}
-        href={`/portfolio/${project.no}`}
-        className="portfolio-item relative w-[280px] h-[400px] flex-shrink-0 group"
-      >
-        <Image
-          src={project.image}
-          alt={`Featured Project ${project.no}`}
-          fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-        <div className="portfolio-item-content">
-          <h3 className="text-xl font-bold text-white font-cormorant">{project.name}</h3>
-          <p className="text-white/80 mt-2 font-montserrat text-sm">{project.about}</p>
-          <span className="inline-block mt-4 text-gold-500 border-b border-gold-500 pb-1 text-sm group-hover:text-white group-hover:border-white transition-colors">
-            View Project
-          </span>
-        </div>
-      </Link>
-    ))}
-  </div>
-</div>
-
+          <div className="md:hidden overflow-x-auto pb-8 -mx-4 px-4">
+            <div className="flex space-x-4" style={{ minWidth: "max-content" }}>
+              {Object.entries(projects).map(([key, project]) => (
+                <Link
+                  key={key}
+                  href={`/portfolio/${project.no}`}
+                  className="portfolio-item relative w-[280px] h-[400px] flex-shrink-0 group"
+                >
+                  <Image
+                    src={project.image}
+                    alt={`Featured Project ${project.no}`}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="portfolio-item-content">
+                    <h3 className="text-xl font-bold text-white font-cormorant">{project.name}</h3>
+                    <p className="text-white/80 mt-2 font-montserrat text-sm">{project.about}</p>
+                    <span className="inline-block mt-4 text-gold-500 border-b border-gold-500 pb-1 text-sm group-hover:text-white group-hover:border-white transition-colors">
+                      View Project
+                    </span>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
 
           <div className="mt-12 text-center">
             <Link
@@ -152,7 +150,7 @@ export default function Home() {
       <section className="py-24 relative">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=1080&width=1920&text=Interior"
+            src="/placeholder.svg"
             alt="Interior Background"
             fill
             className="object-cover"

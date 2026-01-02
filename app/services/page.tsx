@@ -9,7 +9,7 @@ export default function Services() {
       {/* Hero Section */}
       <section className="relative h-[50vh] md:h-[60vh] w-full mb-16">
         <Image
-          src="/images/ser-ban.jpg?height=1080&width=1920&text=Services"
+          src="/images/ser-ban.jpg"
           alt="Our Services"
           fill
           className="object-cover"
@@ -42,8 +42,17 @@ export default function Services() {
               key={service.id}
               className={`flex flex-col ${index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"} gap-12 items-center`}
             >
-              <div className="md:w-1/2 h-[400px] relative overflow-hidden">
-                <Image src={service.image || "/placeholder.svg"} alt={service.title} fill className="object-cover" />
+              <div className="md:w-1/2 h-[400px] relative overflow-hidden w-full">
+                <Image 
+                  src={service.image} 
+                  alt={service.title} 
+                  fill 
+                  className="object-cover"
+                  priority={index === 0}
+                  loading={index === 0 ? "eager" : "lazy"}
+                  quality={85}
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                />
               </div>
               <div className="md:w-1/2">
                 <h3 className="text-3xl font-bold mb-4 font-playfair">{service.title}</h3>
