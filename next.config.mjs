@@ -13,14 +13,16 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   typescript: {
     ignoreBuildErrors: true,
   },
   images: {
     unoptimized: false,
+    localPatterns: [
+      {
+        pathname: '/images/**',
+      },
+    ],
   },
   // Add long-term cache headers for static images and Next.js static assets
   headers: async () => [
