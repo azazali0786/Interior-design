@@ -1,5 +1,5 @@
 // Project data with detailed information
-export const  projects = {
+export const projects = {
   1: {
     name: "Modern Living Space",
     about: "Residential Design",
@@ -308,10 +308,10 @@ export const services = [
 export const teamMembers = [
   {
     id: 1,
-    name: "Rajesh Kumar",
+    name: "salman bhai",
     role: "Founder & Principal Designer",
-    image: "/placeholder.svg?height=500&width=500&text=Rajesh",
-    bio: "With over 15 years of experience in interior design, Rajesh founded the company with a vision to create spaces that are both beautiful and functional. His background in architecture brings a unique perspective to each project, ensuring that every design is not only aesthetically pleasing but also structurally sound and practical.",
+    image: "/placeholder.svg?height=500&width=500&text=Salman%20Bhai",
+    bio: "With over 15 years of experience in interior design, salman founded the company with a vision to create spaces that are both beautiful and functional. His background in architecture brings a unique perspective to each project, ensuring that every design is not only aesthetically pleasing but also structurally sound and practical.",
   },
   {
     id: 2,
@@ -354,21 +354,21 @@ export const teamMembers = [
 export const testimonials = [
   {
     id: 1,
-    text: "Rajesh Interior transformed our house into a home. Their attention to detail and understanding of our vision exceeded our expectations. We couldn't be happier with the results.",
+    text: "Interior Imperial transformed our house into a home. Their attention to detail and understanding of our vision exceeded our expectations. We couldn't be happier with the results.",
     name: "Sarah Johnson",
     role: "Residential Client",
     image: "/placeholder.svg?height=100&width=100",
   },
   {
     id: 2,
-    text: "Working with Rajesh and his team was a pleasure from start to finish. They listened to our needs, respected our budget, and delivered a design that perfectly captures our brand identity.",
+    text: "Working with salman and his team was a pleasure from start to finish. They listened to our needs, respected our budget, and delivered a design that perfectly captures our brand identity.",
     name: "Michael Chen",
     role: "Business Owner",
     image: "/placeholder.svg?height=100&width=100",
   },
   {
     id: 3,
-    text: "The renovation of our historic home was a daunting project, but Rajesh Interior handled it with expertise and sensitivity. They preserved the character we loved while adding modern functionality.",
+    text: "The renovation of our historic home was a daunting project, but Interior Imperial handled it with expertise and sensitivity. They preserved the character we loved while adding modern functionality.",
     name: "Emily and David Rodriguez",
     role: "Renovation Clients",
     image: "/placeholder.svg?height=100&width=100",

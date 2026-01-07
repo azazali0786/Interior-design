@@ -54,7 +54,7 @@ export default function Header() {
               shouldShowSolidBg ? "text-charcoal-900" : "text-white"
             }`}
           >
-            Rajesh Interior
+            Interior Imperial
           </Link>
 
           {/* Desktop Navigation */}
@@ -87,7 +87,7 @@ export default function Header() {
       {isMenuOpen && (
         <div className="md:hidden fixed inset-0 bg-cream-50 mobile-menu-container flex flex-col justify-center items-center z-40">
           <nav className="flex flex-col items-center space-y-8">
-            {["Home", "Portfolio", "About", "Contact"].map((item, index) => (
+            {["Home", "Portfolio", "Services", "About", "Contact"].map((item, index) => (
               <Link
                 key={item}
                 href={item === "Home" ? "/" : `/${item.toLowerCase()}`}

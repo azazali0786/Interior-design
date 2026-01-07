@@ -44,7 +44,7 @@ export default function Contact() {
       <section className="relative h-[50vh] md:h-[60vh] w-full mb-16">
         <Image
           src="/images/about-ban.jpg?height=1080&width=1920&text=Contact"
-          alt="Contact Rajesh Interior"
+          alt="Contact Interior Imperial"
           fill
           className="object-cover"
           priority
@@ -76,13 +76,12 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-xl mb-2 font-cormorant">Our Location</h3>
                   <a
-                    href="https://maps.google.com/?q=Road+no.+09,+Plot+no.17/I/4,+Shivaji+Nagar+Number+2,+Govandi+West,+Baiganwadi,+Govandi+East,+Mumbai,+Maharashtra+400043"
+                    href="https://www.google.com/maps/search/?api=1&query=YSA+Swimming+Pool,+Dasna,+Ghaziabad,+Uttar+Pradesh"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-charcoal-900/70 text-lg hover:text-gold-500 transition-colors"
                   >
-                    Road no. 09, Plot no.17/I/4, Shivaji Nagar Number 2, Govandi West,
-                    Baiganwadi, Govandi East, Mumbai, Maharashtra 400043
+                    Rafiqabad colony dasna ghaziabad up 201015, uttar pradesh, India
                   </a>
                 </div>
               </div>
@@ -92,16 +91,16 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-xl mb-2 font-cormorant">Phone</h3>
                   <a
-                    href="tel:+918286271025"
+                    href="tel:+8800646224"
                     className="text-charcoal-900/70 text-lg hover:text-gold-500 transition-colors block"
                   >
-                    +91 82862 71025
+                    +91 12360 51604
                   </a>
                   <a
                     href="tel:+919326051604"
                     className="text-charcoal-900/70 text-lg hover:text-gold-500 transition-colors block"
                   >
-                    +91 93260 51604
+                    +91 12360 51604
                   </a>
                 </div>
               </div>
@@ -111,10 +110,10 @@ export default function Contact() {
                 <div>
                   <h3 className="font-bold text-xl mb-2 font-cormorant">Email</h3>
                   <a
-                    href="mailto:rajeshinteriorcontractor142@gmail.com"
+                    href="mailto:salmaninteriorcontractor142@gmail.com"
                     className="text-charcoal-900/70 text-lg hover:text-gold-500 transition-colors"
                   >
-                    rajeshinteriorcontractor142@gmail.com
+                    salmaninteriorcontractor142@gmail.com
                   </a>
                 </div>
               </div>

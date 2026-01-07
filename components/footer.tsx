@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           {/* About */}
           <div>
-            <h3 className="text-2xl font-playfair mb-6">Rajesh Interior</h3>
+            <h3 className="text-2xl font-playfair mb-6">Interior Imperial</h3>
             <p className="text-white/70 mb-6 leading-relaxed">
               Transforming spaces with elegant and functional interior design solutions since 1998. We specialize in
               creating beautiful environments that reflect your personality and lifestyle.
@@ -18,7 +18,7 @@ export default function Footer() {
                 <Facebook className="h-5 w-5" />
                 <span className="sr-only">Facebook</span>
               </Link> */}
-              <Link href="https://www.instagram.com/rajeshinterior_142/" className="text-white/70 hover:text-gold-500 transition-colors">
+              <Link href="https://www.instagram.com/azazali786_/" className="text-white/70 hover:text-gold-500 transition-colors">
                 <Instagram className="h-5 w-5" />
                 <span className="sr-only">Instagram</span>
               </Link>
@@ -62,26 +62,25 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   className="text-white/70 hover:text-gold-500 transition-colors"
                 >
-                  Road no. 09, Plot no.17/I/4, Shivaji Nagar Number 2, Govandi West, Baiganwadi, Govandi East, Mumbai,
-                  Maharashtra 400043
+                  Rafiqabad colony dasna ghaziabad up 201015, uttar pradesh, India
                 </a>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-gold-500 mr-3 flex-shrink-0" />
                 <a href="tel:+918286271025" className="text-white/70 hover:text-gold-500 transition-colors">
-                  +91 82862 71025
+                  +91 1234567890
                 </a>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-gold-500 mr-3 flex-shrink-0" />
                 <a href="tel:+919326051604" className="text-white/70 hover:text-gold-500 transition-colors">
-                  +91 93260 51604
+                  +91 12345 67890
                 </a>
               </li>
               <li className="flex items-center">
                 <Mail className="h-5 w-5 text-gold-500 mr-3 flex-shrink-0" />
-                <a href="mailto:rajeshinteriorcontractor142@gmail.com" className="text-white/70 hover:text-gold-500 transition-colors">
-                  rajeshinteriorcontractor142@gmail.com
+                <a href="mailto:salmaninteriorcontractor142@gmail.com" className="text-white/70 hover:text-gold-500 transition-colors">
+                  salmaninteriorcontractor142@gmail.com
                 </a>
               </li>
             </ul>
@@ -89,7 +88,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-white/10 pt-8 text-center text-white/50 text-sm">
-          <p>&copy; {new Date().getFullYear()} Rajesh Interior. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Interior Imperial. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -9,14 +9,14 @@ export default function About() {
       <section className="relative h-[50vh] md:h-[60vh] w-full mb-16">
         <Image
           src="/images/about-ban.jpg"
-          alt="About Rajesh Interior"
+          alt="About Interior Imperial"
           fill
           className="object-cover"
           priority
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 md:px-8">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 animate-fade-in-up">About Rajesh Interior</h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-4 animate-fade-in-up">About Interior Imperial</h1>
           <p className="text-lg md:text-xl text-white/90 max-w-3xl mx-auto font-cormorant animate-fade-in-up delay-200">
             Passionate about creating beautiful, functional spaces that inspire and delight.
           </p>
@@ -29,7 +29,7 @@ export default function About() {
           <div className="md:w-1/2 h-[500px] md:h-[600px] relative overflow-hidden order-1 md:order-none w-full">
             <Image
               src="/images/about1.jpg"
-              alt="Rajesh - Interior Designer"
+              alt="salman - Interior Designer"
               fill
               className="object-cover"
             />
@@ -37,11 +37,11 @@ export default function About() {
           <div className="md:w-1/2">
             <h2 className="text-3xl md:text-5xl font-bold mb-8 leading-tight">Our Story</h2>
             <p className="text-lg text-charcoal-900/80 mb-6 leading-relaxed font-cormorant">
-              Founded in 1998 by Rajesh Mourya, Rajesh Interior has grown from a small design studio to a full-service
+              Founded in 1998 by Salman Bhai, Interior Imperial has grown from a small design studio to a full-service
               interior design firm with a reputation for excellence and innovation.
             </p>
             <p className="text-lg text-charcoal-900/80 mb-6 leading-relaxed font-cormorant">
-              With a background in architecture and a passion for interior spaces, Rajesh brings a unique perspective to
+              With a background in architecture and a passion for interior spaces, salman brings a unique perspective to
               each project, blending functionality with aesthetic beauty to create spaces that truly reflect the
               personalities and needs of his clients.
             </p>
@@ -51,14 +51,14 @@ export default function About() {
             </p>
             <div className="flex items-center">
               <Image
-                src="/images/rajesh.png"
-                alt="Rajesh's Signature"
+                src="/images/salman.png"
+                alt="Salman Bhai's Signature"
                 width={150}
                 height={50}
                 className="mr-4"
               />
               <div>
-                <p className="font-bold text-charcoal-900 font-cormorant text-xl">Rajesh Mourya</p>
+                <p className="font-bold text-charcoal-900 font-cormorant text-xl">Salman Bhai</p>
                 <p className="text-charcoal-900/70">Founder & Principal Designer</p>
               </div>
             </div>

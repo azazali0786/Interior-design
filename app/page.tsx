@@ -12,13 +12,45 @@ export default function Home() {
     <main className="flex flex-col">
       {/* Hero Section - Full Screen */}
       <section className="relative h-screen  w-full flex items-center justify-center">
-        <Image
-          src="/images/banner.jpg"
-          alt="Interior Design Showcase"
-          fill
-          className="object-cover"
-          priority
-        />
+       <section className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+  
+  {/* Background Video */}
+  <video
+    autoPlay
+    muted
+    loop
+    playsInline
+    preload="none"
+    poster="/images/banner.jpg"
+    className="absolute inset-0 w-full h-full object-cover"
+  >
+    <source src="/videos/interior.mp4" type="video/mp4" />
+  </video>
+
+  {/* Dark Overlay */}
+  <div className="absolute inset-0" />
+
+  {/* Hero Content */}
+  <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 md:px-8">
+    <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight animate-fade-in-up">
+      <span className="block">Transforming</span>
+      <span className="block mt-2">Spaces</span>
+    </h1>
+
+    <p className="text-xl md:text-2xl text-white/90 max-w-2xl mb-10 font-cormorant animate-fade-in-up delay-200">
+      Elevating interiors with thoughtful design and meticulous attention to detail
+    </p>
+
+    <Link
+      href="/portfolio"
+      className="bg-transparent border-2 border-white text-white px-8 py-3 font-medium hover:bg-white hover:text-charcoal-900 transition-all duration-300 flex items-center gap-2 animate-fade-in-up delay-300"
+    >
+      Explore Our Work <ArrowRight className="h-4 w-4" />
+    </Link>
+  </div>
+
+</section>
+
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 md:px-8">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight animate-fade-in-up">

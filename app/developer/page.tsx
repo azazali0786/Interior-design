@@ -31,7 +31,7 @@ export default function page() {
           {/* Circular Photo */}
           <div className="relative w-56 h-56 md:w-64 md:h-64 rounded-full overflow-hidden border-4 border-gold-500 shadow-lg flex-shrink-0">
             <Image
-              src="/devv.jpg"
+              src="/azaz2.png"
               alt="Developer Photo"
               fill
               className="object-cover"
@@ -40,10 +40,10 @@ export default function page() {
 
           {/* Message */}
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Hello, I’m Abdullah Shaikh</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">Hello, I’m Azaz Ali</h2>
             <p className="text-lg text-charcoal-900/80 mb-6 leading-relaxed font-cormorant">
               As the developer behind this site, my goal was to blend sleek design with smooth performance. I carefully
-              crafted each section with attention to detail, ensuring that Rajesh Interior's elegance and style shine
+              crafted each section with attention to detail, ensuring that Interior Imperial's elegance and style shine
               through in every pixel.
             </p>
             <p className="text-lg text-charcoal-900/80 leading-relaxed font-cormorant">
@@ -65,7 +65,7 @@ export default function page() {
           <div className="flex flex-col sm:flex-row justify-center items-center gap-6 mb-10">
             {/* Portfolio Button */}
             <Link
-              href="https://thetechshaikh.online"
+              href="https://portfolio-azaz.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gold-500 text-charcoal-900 px-8 py-4 font-medium hover:bg-white transition-colors inline-flex items-center gap-2 rounded-md shadow-md"
@@ -74,7 +74,7 @@ export default function page() {
             </Link>
             {/* GitHub Button */}
             <Link
-              href="https://github.com/coder-philosopher"
+              href="https://github.com/azazali0786"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-charcoal-900 text-white px-8 py-4 font-medium hover:bg-gold-500 hover:text-charcoal-900 transition-colors inline-flex items-center gap-2 rounded-md shadow-md"
@@ -83,7 +83,7 @@ export default function page() {
             </Link>
             {/* LinkedIn Button */}
             <Link
-              href="https://www.linkedin.com/in/abdullah-shaikh-97309b297/"
+              href="https://www.linkedin.com/in/azaz-ali-abc/"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-charcoal-900 text-white px-8 py-4 font-medium hover:bg-gold-500 hover:text-charcoal-900 transition-colors inline-flex items-center gap-2 rounded-md shadow-md"

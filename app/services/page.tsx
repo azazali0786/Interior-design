@@ -29,7 +29,7 @@ export default function Services() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-6 font-playfair">How We Can Help You</h2>
           <p className="text-lg text-charcoal-900/80 max-w-3xl mx-auto font-cormorant">
-            At Rajesh Interior, we offer a comprehensive range of interior design services to meet all your needs.
+            At Interior Imperial  , we offer a comprehensive range of interior design services to meet all your needs.
             Whether you're looking to transform your home, create an inspiring workspace, or renovate an existing
             property, our team of experienced designers is here to bring your vision to life.
           </p>
